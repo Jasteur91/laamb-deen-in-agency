@@ -28,7 +28,14 @@ export default async function handler(req) {
     if (v) h.set(k, v);
   }
   if (ext !== 'html') h.set('accept-ranges', 'bytes');
-  h.set('cache-control', ext === 'html' ? 'public, max-age=60, s-maxage=600' : 'public, max-age=86400, s-maxage=2592000, immutable');
+  if (ext === 'html') {
+    h.set('cache-control', 'public, max-age=60, s-maxage=600');
+  } else {
+    // Byte-range responses must never be shared from the CDN cache, or one range is served for every request.
+    h.set('cache-control', 'public, max-age=86400');
+    h.set('cdn-cache-control', 'no-store');
+    h.set('vercel-cdn-cache-control', 'no-store');
+  }
   h.set('x-content-type-options', 'nosniff');
   return new Response(req.method === 'HEAD' ? null : up.body, { status: up.status, headers: h });
 }
