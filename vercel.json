@@ -1,0 +1,7 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": true,
+  "headers": [
+    { "source": "/(.*)\\.(mp4|jpg|png|mp3|pdf)", "headers": [ { "key": "Cache-Control", "value": "public, max-age=604800" } ] }
+  ]
+}

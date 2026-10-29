@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LAAMB — De l’arène nationale à la scène mondiale</title>
+<meta name="description" content="Film, présentation animée, motion et dossier : la vision de Deen In Agency pour le rayonnement de la lutte sénégalaise.">
+<meta name="theme-color" content="#0B0A1A">
+<meta property="og:title" content="LAAMB — De l’arène nationale à la scène mondiale">
+<meta property="og:description" content="Deen In Agency × Fédération de lutte : film, présentation animée, motion et dossier.">
+<meta property="og:image" content="img/cover.jpg">
+<link rel="icon" href="presentation/a/lion.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,50..150,100..900;1,50..150,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,300..800&display=swap">
+<style>
+:root{
+  --night:#0B0A1A; --night2:#14122A; --line:rgba(244,237,225,.14); --ivory:#F4EDE1; --muted:#CFC6B6; --dim:#9E968A;
+  --green:#00853F; --yellow:#FDEF42; --red:#E31B23; --gold:#F0BE45;
+  --display:'Anybody','Arial Black',Arial,sans-serif; --text:'Bricolage Grotesque','Segoe UI',Arial,sans-serif;
+  --gut:max(20px, env(safe-area-inset-left, 0px)); --gutR:max(20px, env(safe-area-inset-right, 0px));
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--night);color:var(--ivory);font:400 17px/1.55 var(--text);-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:100%;max-width:1240px;margin:0 auto;padding-left:var(--gut);padding-right:var(--gutR)}
+.flag{display:flex;height:6px}.flag i{flex:1}.flag i:nth-child(1){background:var(--green)}.flag i:nth-child(2){background:var(--yellow)}.flag i:nth-child(3){background:var(--red)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;overflow:hidden;isolation:isolate}
+.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(11,10,26,.78) 0%,rgba(11,10,26,.15) 32%,rgba(11,10,26,.25) 55%,rgba(11,10,26,.96) 100%)}
+.top{display:flex;align-items:center;justify-content:space-between;padding-top:max(20px, env(safe-area-inset-top, 0px))}
+.lock{display:flex;align-items:center;gap:12px;text-decoration:none}
+.lock img:first-child{height:44px;width:auto}.lock img+img{height:34px;width:auto}
+.mark{width:clamp(64px,9vw,104px);height:auto;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-body{margin-top:auto;padding-bottom:clamp(28px,6vh,64px)}
+.laamb{font-family:var(--display);font-weight:900;font-size:clamp(64px,15.5vw,236px);line-height:.82;letter-spacing:-.01em;margin:0;font-stretch:150%;animation:face 1.6s cubic-bezier(.16,1,.3,1) both}
+@keyframes face{from{font-stretch:50%;opacity:0;transform:translateY(30px)}to{font-stretch:150%;opacity:1;transform:none}}
+.tag{font-family:var(--display);font-weight:800;font-stretch:125%;font-size:clamp(20px,3.4vw,40px);line-height:1.1;margin:18px 0 0;text-wrap:balance;max-width:24ch}
+.tag span{color:var(--yellow)}
+.meta{margin:16px 0 0;color:var(--muted);max-width:60ch}
+.meta b{color:var(--gold);font-weight:600}
+.jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.jump a{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border-radius:999px;border:1px solid rgba(244,237,225,.35);background:rgba(11,10,26,.45);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);text-decoration:none;font-weight:600;font-size:15px}
+.jump a i{width:10px;height:10px;border-radius:50%}
+.jump a:hover{border-color:var(--ivory)}
+.jump a.primary{background:var(--ivory);color:var(--night);border-color:var(--ivory)}
+
+/* sections */
+section.block{padding:clamp(72px,11vw,140px) 0;border-top:1px solid var(--line)}
+.head{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-bottom:clamp(28px,4vw,48px)}
+.kick{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:15px}
+.kick i{width:36px;height:4px;border-radius:2px;background:var(--c)}
+h2{font-family:var(--display);font-weight:900;font-stretch:112%;font-size:clamp(34px,5.4vw,72px);line-height:.98;margin:0;text-wrap:balance;min-width:0;overflow-wrap:break-word}
+.lede{color:var(--muted);max-width:58ch;margin:0;min-width:0}
+.player{position:relative;border-radius:14px;overflow:hidden;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.45);border:1px solid var(--line)}
+.player video{width:100%;height:auto}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:18px;color:var(--dim);font-size:15px}
+.facts span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--c);margin-right:8px;vertical-align:middle}
+
+/* presentation card */
+.deck{position:relative;display:block;border-radius:16px;overflow:hidden;min-height:clamp(360px,52vw,620px);text-decoration:none;isolation:isolate;border:1px solid var(--line)}
+.deck img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.deck::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(11,10,26,.94) 0%,rgba(11,10,26,.7) 45%,rgba(11,10,26,.05) 100%)}
+.deck:hover img{transform:scale(1.04)}
+.deck-in{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(22px,4vw,56px);gap:18px}
+.deck-num{font-family:var(--display);font-style:italic;font-weight:800;font-stretch:60%;font-size:clamp(90px,16vw,200px);line-height:.85;color:var(--yellow);margin:0}
+.deck-num small{font-size:.22em;font-style:normal;font-stretch:120%;color:var(--ivory);margin-left:.3em;letter-spacing:.02em}
+.btn{display:inline-flex;align-items:center;gap:12px;align-self:flex-start;min-height:52px;padding:0 24px;border-radius:999px;background:var(--yellow);color:var(--night);font-weight:700;font-size:16px;text-decoration:none}
+.btn svg{flex:none}
+.btn.ghost{background:transparent;color:var(--ivory);border:1px solid rgba(244,237,225,.4)}
+.btn.ivory{background:var(--ivory)}
+
+/* motion */
+.split{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center}
+.vert{max-width:380px;width:100%;justify-self:center}
+.vert .player{aspect-ratio:9/16}
+.vert video{height:100%;object-fit:cover}
+.bigword{font-family:var(--display);font-weight:900;line-height:.86;margin:0;font-size:clamp(44px,8vw,110px)}
+.bigword span{display:block}
+.bigword .w{font-stretch:150%}.bigword .c{font-stretch:55%;color:var(--red)}
+
+/* dossier */
+.pages{display:flex;gap:14px;overflow-x:auto;padding:6px 2px 18px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-color:rgba(244,237,225,.3) transparent}
+.pages a{flex:none;width:clamp(150px,22vw,230px);scroll-snap-align:start;border-radius:6px;overflow:hidden;border:1px solid var(--line);box-shadow:0 14px 34px rgba(0,0,0,.35);transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.pages a:hover{transform:translateY(-6px)}
+.pages img{width:100%;height:auto;aspect-ratio:210/297;object-fit:cover;background:var(--night2)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:clamp(56px,8vw,96px) 0 calc(36px + env(safe-area-inset-bottom, 0px))}
+.foot{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:28px}
+.foot img{height:120px;width:auto}
+.foot p{margin:0;color:var(--dim);font-size:14px;max-width:46ch}
+.foot .sign{color:var(--ivory);font-size:16px}
+
+@media (min-width:860px){
+  .head{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:end;column-gap:56px}
+  .head .kick{grid-column:1/-1}
+  .split{grid-template-columns:minmax(0,1fr) minmax(0,380px)}
+  .vert{justify-self:end}
+}
+@media (max-width:520px){
+  .lock img+img{display:none}
+  .deck::after{background:linear-gradient(180deg,rgba(11,10,26,.25) 0%,rgba(11,10,26,.92) 70%)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .laamb,.mark{animation:none}
+  .hero video{display:none}
+  .deck img,.pages a{transition:none}
+}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img class="poster" src="img/patrimoine.jpg" alt="">
+  <video autoplay muted loop playsinline preload="auto" poster="img/patrimoine.jpg" aria-hidden="true">
+    <source src="presentation/a/v_patrimoine.mp4" type="video/mp4">
+  </video>
+  <div class="wrap top">
+    <a class="lock" href="#" aria-label="Deen In Agency"><img src="presentation/a/lion.png" alt=""><img src="presentation/a/wordmark.png" alt="Deen In Agency"></a>
+    <img class="mark" src="presentation/a/ring_small.png" alt="Anneau LAAMB vert, jaune et rouge">
+  </div>
+  <div class="wrap hero-body">
+    <h1 class="laamb">LAAMB</h1>
+    <p class="tag">De l’arène nationale <span>à la scène mondiale</span></p>
+    <p class="meta">Vision stratégique pour le rayonnement et la professionnalisation de la lutte sénégalaise. <b>Présenté par Astel Ba, Deen In Agency.</b></p>
+    <nav class="jump" aria-label="Contenus">
+      <a class="primary" href="presentation/"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>Lancer la présentation</a>
+      <a href="#film"><i style="background:var(--green)"></i>Le film</a>
+      <a href="#motion"><i style="background:var(--red)"></i>Le motion</a>
+      <a href="#dossier"><i style="background:var(--gold)"></i>Le dossier</a>
+    </nav>
+  </div>
+</header>
+<div class="flag" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<main>
+  <section class="block" id="film" style="--c:var(--green)">
+    <div class="wrap">
+      <div class="head">
+        <p class="kick"><i></i>Le film</p>
+        <h2>Ce que Deen In Agency apporte</h2>
+        <p class="lede">Une minute pour comprendre l’enjeu : transformer la popularité de la lutte en valeur durable, pour les lutteurs, pour la Fédération et pour les marques.</p>
+      </div>
+      <div class="player">
+        <video controls playsinline preload="metadata" poster="img/film_poster.jpg">
+          <source src="media/laamb_film.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="facts"><span>Voix off en français</span><span>Sous-titres intégrés</span><span>Images de synthèse 3D</span></div>
+    </div>
+  </section>
+
+  <section class="block" id="presentation" style="--c:var(--yellow)">
+    <div class="wrap">
+      <div class="head">
+        <p class="kick"><i></i>La présentation animée</p>
+        <h2>Le dossier, en mouvement</h2>
+        <p class="lede">Treize slides en plein écran, films 3D en boucle et transitions aux couleurs du drapeau. Elle défile seule ; touchez ou utilisez les flèches pour avancer.</p>
+      </div>
+      <a class="deck" href="presentation/">
+        <img src="img/industrie.jpg" alt="L’Arène nationale vue du ciel, entourée de vingt mille points lumineux" loading="lazy">
+        <div class="deck-in">
+          <p class="deck-num">13<small>slides</small></p>
+          <span class="btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>Lancer la présentation</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="block" id="motion" style="--c:var(--red)">
+    <div class="wrap split">
+      <div>
+        <div class="head" style="grid-template-columns:minmax(0,1fr)">
+          <p class="kick"><i></i>Le motion</p>
+          <p class="bigword"><span class="w">L’ARÈNE</span><span class="c">EN 40 SECONDES</span></p>
+          <p class="lede">Format vertical pour les réseaux sociaux : percussions sabar, typographie cinétique et l’arène en 3D, du sable jusqu’au diamant.</p>
+        </div>
+      </div>
+      <div class="vert">
+        <div class="player">
+          <video controls playsinline preload="metadata" poster="img/motion_poster.jpg">
+            <source src="media/laamb_motion.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="dossier" style="--c:var(--gold)">
+    <div class="wrap">
+      <div class="head">
+        <p class="kick"><i></i>Le dossier</p>
+        <h2>Vingt-quatre pages pour tout dire</h2>
+        <p class="lede">Le patrimoine, les chiffres sourcés, la stratégie en quatre leviers, la feuille de route et l’identité proposée. Conçu comme un magazine, à lire ou à imprimer en A4.</p>
+      </div>
+      <div class="pages" id="pages" aria-label="Pages du dossier"></div>
+      <div class="actions">
+        <a class="btn ivory" href="media/LAAMB_Dossier_Deen_In_Agency.pdf" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M19 14v6H4V5h6"/></svg>Ouvrir le PDF</a>
+        <a class="btn ghost" href="media/LAAMB_Dossier_Deen_In_Agency.pdf" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 3v12M6 11l6 6 6-6M4 21h16"/></svg>Télécharger (19 Mo)</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <img src="presentation/a/lockup.png" alt="Deen In Agency : Difference, Excellence, Ethic, Novelty">
+    <div>
+      <p class="sign">Présenté par Astel Ba, Deen In Agency</p>
+      <p>Images de synthèse 3D réalisées pour ce projet. Chiffres : 20 000 places à l’Arène nationale ; 48 pays couverts par la diffusion annoncée du combat royal du 5 avril 2026, et non une audience mesurée.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const box = document.getElementById('pages');
+  for (let i = 1; i <= 24; i++) {
+    const n = String(i).padStart(2, '0'), a = document.createElement('a');
+    a.href = 'media/LAAMB_Dossier_Deen_In_Agency.pdf#page=' + i; a.target = '_blank'; a.rel = 'noopener';
+    a.setAttribute('aria-label', 'Page ' + i + ' du dossier');
+    a.innerHTML = '<img src="img/dossier-' + n + '.jpg" alt="" loading="lazy" width="331" height="468">';
+    box.appendChild(a);
+  }
+  const hv = document.querySelector('.hero video');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches && hv) hv.removeAttribute('autoplay');
+})();
+</script>
+</body>
+</html>
