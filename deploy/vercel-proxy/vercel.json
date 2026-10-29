@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    { "source": "/presentation", "destination": "/presentation/", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/", "destination": "/api/m?p=index.html" },
+    { "source": "/presentation/", "destination": "/api/m?p=presentation/index.html" },
+    { "source": "/presentation/a/:file", "destination": "/api/m?p=presentation/a/:file" },
+    { "source": "/media/:file", "destination": "/api/m?p=media/:file" },
+    { "source": "/img/:file", "destination": "/api/m?p=img/:file" }
+  ]
+}
