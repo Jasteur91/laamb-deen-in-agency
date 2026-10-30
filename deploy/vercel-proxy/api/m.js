@@ -1,7 +1,7 @@
 export const config = { runtime: 'edge' };
 
 // Files live in the public GitHub repo Jasteur91/laamb-deen-in-agency, pinned to one commit.
-const ORIGIN = 'https://raw.githubusercontent.com/Jasteur91/laamb-deen-in-agency/39cdc539ca291a825b955b4d29afdd8105945df7/';
+const ORIGIN = 'https://raw.githubusercontent.com/Jasteur91/laamb-deen-in-agency/d97339dc0b16235ee012798ef850b960b94e25e9/';
 const TYPES = {
   html: 'text/html; charset=utf-8', mp4: 'video/mp4', jpg: 'image/jpeg', jpeg: 'image/jpeg',
   png: 'image/png', webp: 'image/webp', svg: 'image/svg+xml', mp3: 'audio/mpeg', pdf: 'application/pdf'
